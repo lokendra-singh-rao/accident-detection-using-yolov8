@@ -1,0 +1,8 @@
+ultralytics
+numpy
+matplotlib
+cv2
+opencv-python
+wtforms
+werkzeug
+flask
