@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AnamolyDetection-YOLOv8</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(247, 250, 252);
+        }
+
+        .navbar {
+            box-shadow: rgba(149, 157, 165, 0.15) 0px 3px 6px 0px;
+            background-color: white;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .hero-image {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            border-radius: 1.25rem;
+            width: 42rem;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .main1,
+        .main2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .main2 {
+            justify-content: space-around;
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .main img {
+            width: 25rem;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        .main video {
+            width: 25rem;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        img, video {
+            border-radius: 1.25rem;
+        }
+
+        .services {
+            box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+
+<body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex flex-shrink-0 items-center">
+                        <img class="h-8 w-auto" src="/static/images/logo.png" alt="Your Company">
+                    </div>
+                    <div class="sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <a href="/home" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                                aria-current="page">Home</a>
+                            <a href="/video"
+                                class="text-black-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Video
+                                Input</a>
+                            <!-- <a href="/webcam"
+                                class="text-black-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Webcam</a> -->
+<!--                            <a href="/cctv"-->
+<!--                                class="text-black-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">CCTV-->
+<!--                                Feed</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- HERO SECTION -->
+    <div class="hero mt-10 mb-10">
+        <div class="hero-left">
+            <div class="hero-left-text flex justify-start" style="align-items: center;">
+                <div style="font-size: 13.5rem;" class="font-bold tracking-tight text-gray-900 sm:text-6xl">S</div>
+                <div>
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">mart
+                    </h1>
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">urveillance
+                    </h1>
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">ystem
+                    </h1>
+                </div>
+            </div>
+
+            <div class="hero-left-btns mt-8">
+<!--                <a href="/cctv"-->
+<!--                    class="mr-4 inline-block rounded-md border border-transparent bg-indigo-800 px-8 py-3 text-center font-medium text-white hover:bg-indigo-900">CCTV-->
+<!--                    Feed</a>-->
+                <a href="/video"
+                    class="mr-4 inline-block rounded-md border border-transparent bg-indigo-800 px-8 py-3 text-center font-medium text-white hover:bg-indigo-900">Video
+                    Input</a>
+                <!-- <a href="/webcam"
+                    class="inline-block rounded-md border border-transparent bg-indigo-800 px-8 py-3 text-center font-medium text-white hover:bg-indigo-900">Webcam</a> -->
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-image overflow-hidden sm:opacity-0 lg:opacity-100">
+                <video src="/static/files/crashMain.mp4" autoplay muted alt="" class="h-full w-full object-cover object-center"></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <header class="services-header py-10 py-10">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <h1 class="text-5xl tracking-tight text-black font-bold">Services Offered</h1>
+            </div>
+        </header>
+        <div class="main">
+            <div class="main1">
+                <div class="main11">
+                    <figure>
+                        <img src="../static/images/crash.jpg" alt="Image Missing">
+                        <figcaption>Fig. Vehicle Crash Detection</figcaption>
+                    </figure>
+                </div>
+                <div class="main12">
+                    <figure>
+                        <img src="../static/images/fight.jpeg" alt="Image Missing">
+                        <figcaption>Fig. Fight detection</figcaption>
+                    </figure>
+                </div>
+                <div class="main13">
+                    <figure>
+                        <img src="../static/images/weapon.jpg" alt="Image Missing">
+                        <figcaption>Fig. Weapon detection</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div style="width: 100%;" class="main2">
+                <div class="main21">
+                    <h1 class="font-bold text-4xl">Anamoly Detection using YOLOv8</h1>
+                    <br>
+                    <h4 class="font-bold text-2xl">Weapon detection</h4>
+                    <p></p>
+                    <br>
+                    <h4 class="font-bold text-2xl">Fight detection</h4>
+                    <p></p>
+                    <br>
+                    <h4 class="font-bold text-2xl">Vehicle crash detection</h4>
+                    <p></p>
+                    <br>
+                    <h4 class="font-bold text-2xl">Theft detection</h4>
+                    <p></p>
+                    <br>
+                </div>
+                <div class="main22">
+                    <figure>
+                        <img src="../static/images/theft.png" alt="Image Missing">
+                        <figcaption>Fig. Theft detection</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video</title>
+    <style>
+        body{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+            color:white;
+            margin:0px;
+            padding:0px;
+            background-color: black;
+            min-height:100vh;
+        }
+        header.feature-box.top{
+        background-color:black;
+        margin:0px;
+        padding:2px;
+        text-align:center;
+        }
+        .features{
+          background-color:black;
+          width: 900px;
+          height: 700px;
+          border-radius: 35px;
+          object-fit: contain;
+          margin:20px;
+        }
+        section.col-sm{
+          background-color:black;
+          object-fit: contain;
+          padding: 0.25rem;
+          align-self: center;
+          display: ruby;
+        }
+
+        img{
+          width: 75%;
+          height: auto;
+         border-radius: 10px;
+         object-fit: contain;
+        }
+
+        .new{
+        color:black;
+        margin:0px;
+        padding:10px;
+        background-color:green;
+        margin:0px;
+        margin-top:-10px;
+        }
+
+    </style>
+</head>
+<body>
+<header class="feature-box top">
+    <h1><strong>Accident Detection using YOLOv8</strong></h1>
+</header>
+  <section class="col-sm" >
+          <img src="{{ url_for('video') }}"   alt="Upload video">
+  </section>
+<section>
+    <div class="new" >
+      <form method = 'POST' enctype="multipart/form-data" style="align-content: center; text-align: center;display: flex;">
+        {{form.hidden_tag()}}
+        {{form.file(class_="custom-file-input")}}
+
+        <div>
+        <button type="submit" name="favorite" value="x" class="btnCustom">
+            Submit
+        </button>
+      </div>
+      </form>
+    </div>
+ </section>
+
+</body>
+</html>
