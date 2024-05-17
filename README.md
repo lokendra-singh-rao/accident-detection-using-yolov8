@@ -20,7 +20,7 @@ This project utilizes YOLOv8, Google Colab, Python, Roboflow, Deep Learning, Ope
 - Click on Video Input button and upload video on next page and submit to see the results
 
 ### Training Data
-- Go to <a src="https://drive.google.com/drive/folders/1Yh56CJvFXfS9iJsxpZCZhpwBf45vL6uZ?usp=sharing">Training Data</a> to get the Training Data.
+- Go to [Training Data](https://drive.google.com/drive/folders/1Yh56CJvFXfS9iJsxpZCZhpwBf45vL6uZ?usp=sharing) to get the Training Data.
 
 ## Model Training
 #### Preparing Custom dataset
@@ -42,8 +42,7 @@ This project utilizes YOLOv8, Google Colab, Python, Roboflow, Deep Learning, Ope
 Next, the trained model was used to perform validation and testing.
 
 ### Training Results
-- You can get the google colab jupyter notebook and training, validation and testing results on <a src="https://drive.google.com/drive/folders/14IkrtwecfqIPW-AQ6uR_YUWlo-fwZjBk?usp=sharing">Training Results</a>
-
+- You can get the google colab jupyter notebook and training, validation and testing results on [Training Results](https://drive.google.com/drive/folders/14IkrtwecfqIPW-AQ6uR_YUWlo-fwZjBk?usp=sharing)
 
 ## Challenges Faced
 - Took long enough to find required dataset and then filtering the best frames out of all data found as most of the data is of low quality and bad resolution which is not suitable for machine learning.
