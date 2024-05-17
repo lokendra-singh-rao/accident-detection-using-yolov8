@@ -6,6 +6,7 @@ This project utilizes YOLOv8, Google Colab, Python, Roboflow, Deep Learning, Ope
 - We are utilizing Yolov8 model to train our personalized dataset that consists of over 3000 images gathered from various sources such as the UCF Crime Dataset and Roboflow.
 - After completing 25 epochs of training, this model is now prepared to identify accidents with a high likelihood. Even though its current training doesn't allow for real-world deployment.
 
+
 ## Model Training and Testing
 #### Preparing Custom dataset
 - We gathered over 250 images from various sources such as YouTube, Google images, Kaggle.com, and also converted 30 videos into frames using python.
@@ -13,7 +14,7 @@ This project utilizes YOLOv8, Google Colab, Python, Roboflow, Deep Learning, Ope
 - While annotating, we designated images without accidents as NULL and outlined a bounding box around the accident site in images that did have an accident.
 - Next, we split the dataset into training, validation, and testing subsets.
 - In the last stage, we obtained the dataset in standard images and text files containing labels for bounding box positions.
--                                                                                  
+                                                                           
 #### Setting up Google Collab to Train the Model
 - We utilized Google Colab for training this model as it offers a free GPU that is quicker than our own local setups.
 - Utilized Jupyter notebooks on Google Colab to create and execute Python code, seamlessly combining code, text, and visualisations in one place.
@@ -31,14 +32,17 @@ Next, the trained model was used to perform validation and testing.
 - Didn't had idea of what parameters should be used in training the model like number of epochs, batch size, number of workers, etc.
 - Faced failures in training models initially as we had no idea that how much frames should be trained, initially we were training 300-500 images and hoping to get good results but failed and wasted time.
 
+
 ## Results
 - You can get the google colab jupyter notebook and training, validation and testing results on https://drive.google.com/drive/folders/1Yh56CJvFXfS9iJsxpZCZhpwBf45vL6uZ?usp=sharing
+
 
 ## Learning from the Project
 - Acquired practical experience working with YOLO and CNN Algorithm.
 - Increased understanding of machine learning.
 - Improvement in our ability to create a model that is both faster and more precise.
 - Managing time as well as resources.
+
 
 ## Future Works
 - Add more classes of 'Weapon Detection', 'Fight Detection', 'Theft Detection' to make the model versatile.
