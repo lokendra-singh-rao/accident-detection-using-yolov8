@@ -51,7 +51,7 @@ Next, the trained model was used to perform validation and testing.
 - Faced failures in training models initially as we had no idea that how much frames should be trained, initially we were training 300-500 images and hoping to get good results but failed and wasted time.
 
 
-## Learning from the Project
+## Learnings from the Project
 - Acquired practical experience working with YOLO and CNN Algorithm.
 - Increased understanding of machine learning.
 - Improvement in our ability to create a model that is both faster and more precise.
